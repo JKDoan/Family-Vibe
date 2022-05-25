@@ -1,0 +1,107 @@
+:root {
+    --leftPosition: 50
+}
+
+* {
+    box-sizing: border-box
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #ffba01;
+    background-size: cover;
+    font-family: var(--fonts-normal-text);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0
+}
+
+#content {
+    display: block;
+    position: absolute;
+}
+
+#choiceMenu {
+    background: linear-gradient(180deg, #fff 25.83%, #fff9eb 100%);
+    border-radius: 0 0 33px 33px;
+    height: auto;
+    width: 100vw;
+    position: absolute;
+    box-shadow: 0 15px 250px 40px rgba(192, 76, 50, .55);
+    transition-duration: 0.2s;
+}
+
+p {
+    font-family: "HP Simplified";
+    text-align: center;
+    font-size: 5vh;
+    color: #5f5149;
+    font-weight: 1000
+}
+
+#emotions {
+    position: static;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    object-fit: contain;
+    margin-bottom: 50px
+}
+
+.navitem {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: 0
+}
+
+.image {
+    overflow: hidden;
+    width: 15vh;
+    max-width: 64%;
+    height: auto
+}
+
+.buttonStyle {
+    --leftPosition: 50;
+
+    z-index: 1;
+    height: 12vh;
+    width: 50vw;
+    position: relative;
+    border-radius: 33px;
+    border-style: none;
+    top: 70vh;
+    margin: 5px;
+    font-family: 'HP Simplified';
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3vh;
+    left: calc(var(--leftPosition)* 1vw);
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    box-shadow: 0px 20px 72px rgba(192, 76, 50, .55);
+    transition-duration: 0.2s;
+}
+
+.buttonStyle:hover {
+    opacity: 90%;
+  }
+
+#submit {
+    background: linear-gradient(180deg, #ffa26e 0, #f95b29 100%);
+    color: #fff
+}
+
+#goBack {
+    background: linear-gradient(180deg, #fff 25.83%, #fff9eb 100%);
+    color: #5f5149
+}

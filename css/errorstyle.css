@@ -1,0 +1,63 @@
+body {
+    background: #ffba01;
+    background-size: cover;
+    font-family: var(--fonts-normal-text);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0
+}
+
+#content {
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+p {
+    font-family: "HP Simplified";
+    font-weight: 700;
+    text-align: center;
+    color: #5f5149
+}
+
+button {
+    --leftPosition: 50;
+    width: 30vw;
+    height: 6vh;
+    position: absolute;
+    background: linear-gradient(180deg, #fff 25.83%, #fff9eb 100%);
+    border: none;
+    box-shadow: 1px 20px 50px 0 #c04c32;
+    border-radius: 33px;
+    left: calc(var(--leftPosition)* 1vw);
+    transform: translateX(-50%)
+}
+
+#uhoh {
+    font-size: 10vh;
+    margin-bottom: -10px
+}
+
+#desc {
+    font-size: 30px
+}
+
+#heartbreak {
+    font-size: 8vw;
+    transform: translateY(-10%)
+}
+
+#try_again {
+    font-family: 'HP Simplified';
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3vh;
+    color: #5f5149
+}
+
+@media only screen and (max-width:526px) {
+    button {
+        width: 158px
+    }
+}
